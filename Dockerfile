@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine3.9
 
-LABEL version="1.0.0"
+LABEL version="1.0.1"
 
 LABEL maintainer="Microsoft Corporation"
 LABEL com.github.actions.name=".NET Core CLI"

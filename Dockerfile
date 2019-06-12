@@ -8,7 +8,7 @@ LABEL com.github.actions.description="GitHub Action to build, test, package or p
 LABEL com.github.actions.icon="triange"
 LABEL com.github.actions.color="blue"
 
-RUN sudo apt-get install npm
+RUN apt-get install npm
 
 COPY . .
 

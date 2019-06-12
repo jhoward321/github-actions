@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine3.9
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2-bionic
 
 LABEL version="1.0.1"
 
@@ -8,7 +8,7 @@ LABEL com.github.actions.description="GitHub Action to build, test, package or p
 LABEL com.github.actions.icon="triange"
 LABEL com.github.actions.color="blue"
 
-RUN apk add npm
+RUN sudo apt-get install npm
 
 COPY . .
 
